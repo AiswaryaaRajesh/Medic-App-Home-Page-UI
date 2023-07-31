@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Medic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>   
+    </head>
+
+    <body>
+        <!-- Navbars -->
+        <div class="navbars fixed-top">
+            <!-- Navbar 1 Top -->
+            <div id="navbar1" class="d-flex justify-content-center align-items-center">
+                <!--Left App Name-Logo -->
+                <div class="app-logo d-flex align-items-center mt-2">
+                    <div class="logo mb-3 ms-3 ">
+                        <!--CSS Logo Insert-->
+                    </div>
+                    <div class="name d-flex justify-content-between align-items-center">
+                        <p class="medic">Medic</span>
+                        <p class="app">app</span>
+                    </div>
+                </div>
+
+                <!-- Search Bar-->
+                <div class="app-search d-flex align-items-center ps-10">
+                    <input class="search-bar" placeholder="Search">
+                    <div class="search-icon d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+                    </div>
+                </div>
+
+                <!--Right Notification-Profile -->
+                <div class="app-profile d-flex align-items-center">
+                    <div class="pe-3">
+                        <a href="#"><i class="noti fa-solid fa-bell bell"></i></a>
+                    </div>
+                    <div class="profile pe-4">
+                        <a class="icon-link" href="#">
+                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navbar 2 Top -->
+            <div id="navbar2" class="d-flex justify-content-center align-items-center bg-light">
+                
+                <!-- Dashboard -->
+                <a class="nav-links pe-4" href="#">Dashboard</a>
+                
+                <!-- Medicine Dropdown-->
+                <div class="dropdown pe-4">
+                    <button type="button" class="drop-btn dropdown-toggle" data-bs-toggle="dropdown">Medicine</button>
+                    <ul class="dropdown-menu shadow">
+                        <a class="drop-links dropdown-item nav-links" href="#">Appointments</a>
+                        <a class="drop-links dropdown-item nav-links" href="#">Doctors</a>
+                        <a class="drop-links dropdown-item nav-links" href="#">Departments</a>
+                        <a class="drop-links dropdown-item nav-links" href="#">Patients</a>
+                        <a class="drop-links dropdown-item nav-links" href="#">Payments</a>
+                    </ul>
+                </div>
+
+                <!-- Services Dropdown-->
+                <div class="dropdown">
+                    <button type="button" class="drop-btn dropdown-toggle" data-bs-toggle="dropdown">Service Pages</button>
+                    <ul class="dropdown-menu shadow">
+                        <a class="drop-links dropdown-item nav-links" href="#">Invoices</a>
+                        <a class="drop-links dropdown-item nav-links" href="#">Pricing</a>
+                        <a class="drop-links dropdown-item nav-links" href="#">Edit account</a>
+                        <a class="drop-links dropdown-item nav-links" href="#">Events timeline</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            
+        <!-- Main Content -->        
+        <div class="main-content d-block">
+
+            <!-- Boxes -->
+            <div class="boxes d-flex justify-content-center align-items-center">
+                <div class="box rounded d-flex justify-content-center align-items-center bg-light shadow">
+                    <i class="icons pe-5 fa-solid fa-suitcase-medical"></i>
+                    <div class="appointments d-block">
+                        <h6>Appointments</h6>
+                        <p class="text-primary">213</p>
+                    </div>
+                </div>
+                <div class="box rounded d-flex justify-content-center align-items-center bg-light shadow">
+                    <i class="icons pe-5 fa-solid fa-wheelchair"></i>
+                    <div class="appointments d-block">
+                        <h6>New patients</h6>
+                        <p class="text-primary">104</p>
+                    </div>
+                </div>
+                <div class="box rounded d-flex justify-content-center align-items-center bg-light shadow">
+                    <i class="icons pe-5 fa-solid fa-notes-medical"></i>
+                    <div class="appointments d-block">
+                        <h6>Operations</h6>
+                        <p class="text-primary">24</p>
+                    </div>
+                </div>
+                <div class="box rounded d-flex justify-content-center align-items-center bg-light shadow">
+                    <i class="icons pe-5 fa-sharp fa-solid fa-dollar-sign"></i>
+                    <div class="appointments d-block">
+                        <h6>Appointments</h6>
+                        <p class="text-primary">213</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Line Graph -->
+            <div class="hospital-survey d-flex justify-content-center align-items-center">
+                <div class="line-graph">
+                    <h1>Hospital Survey</h1>
+                    <img class="image" src="./line-graph.png" alt="Line Graph depicting patients in 2018 and 2019.">
+                </div>
+            </div>
+            
+            <!-- Current Income -->
+            <div class="current-income p-4 d-flex justify-content-center align-items-center">
+
+                <!-- Current Month -->
+                <div class="curr-income">
+                    <h4 class="d-flex justify-content-start align-items-center">$25038</h4>
+                    <p class="text-secondary">Income in current month</p>
+                    <img class="curr-img" src="./income-month.png" alt="Graph depicting income generated in a month.">
+                </div>
+
+                <!-- Current Week-->
+                <div class="curr-income">
+                    <h4 class="d-flex justify-content-start align-items-center">$2195</h4>
+                    <p class="text-secondary">Income in current week</p>
+                    <img class="curr-img" src="./income-week.png" alt="Graph depicting income generated in a week.">
+                </div>
+            </div>
+
+            <!-- Patient-Dept -->
+            <div class="pat-dept p-4 d-flex justify-content-center align-items-center">
+                
+                <!-- Patient Age -->
+                <div class="patient-age">
+                    <h4 class="d-flex justify-content-start align-items-center">Patients age</h4>
+                    <img class="pat-img" src="./patient-age.png" alt="Pie Chart depicting the ages of the patients getting treated.">    
+                </div>
+
+                <!-- Patient Gender -->
+                <div class="patient-gender">
+                    <h4 class="d-flex justify-content-start align-items-center">Patients gender</h4>
+                    <img class="pat-img" src="./patient-gender.png" alt="Pie chart depicting the genders of the patients getting treatment ">    
+                </div>
+
+                <!-- Department -->
+                <div class="dept">
+                    <h4 class="d-flex justify-content-start align-items-center">Department</h4>
+                    <img class="pat-img" src="./departments.png" alt="Pie chart depicting the various departments and the number of patients getting treated in them.">    
+                </div>  
+            </div>
+        </div>
+
+        <!-- Last Appointments Table -->
+        <div class="last-appointments">
+            <h4 class="d-flex justify-content-center align-items-center">Last Appointments</h4>
+            <table class="table table-hover table-bordered align-middle d-flex justify-content-center align-items-center">
+                    <tr class="table-secondary">
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Visit time</th>
+                        <th>Number</th>
+                        <th>Doctor</th>
+                        <th>Injury/Condition</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img class="table-pic" src="./person.jpg" alt="Patient Photo"></td>
+                        <td>Emma</td>
+                        <td class="text-primary"><i class="pe-2 fa-solid fa-at"></i>emma.@gmail.com</td>
+                        <td>10 Feb 2018</td>
+                        <td>9:15 - 9:45</td>
+                        <td class="text-primary pt-3 pb-3 d-flex align-items-center justify-content-center"><i class="pe-2 fa-solid fa-mobile-retro"></i>9856723451</td>
+                        <td>Dr. Liam</td>
+                        <td>Arthritis</td>
+                        <td><i class="pen me-1 fa-solid fa-pen-to-square"></i><i class="trash ms-1 fa-solid fa-trash"></i></td>
+                    </tr>
+                
+            </table>
+        </div>
+    </body>
+
+    <footer>
+        
+        <div class="footer fixed-bottom d-flex justify-content-center align-items-center">
+            <div class="footer-left d-flex justify-content-center align-items-center">
+                <p class="pe-2 dashboard">Dashboards</p>
+                <p><i class="text-secondary pe-2 fa-solid fa-caret-right"></i></p>
+                <p class="pe-2 default">Default</p>
+            </div>
+
+            <!-- Version -->
+            <div class="footer-right d-flex justify-content-center align-items-center">
+                <p>Version 1.3.0</p>
+                <p><i class="ps-2 v-icon text-primary fa-sharp fa-solid fa-gears"></i></p>
+            </div>
+            
+        </div>
+    </footer>
+</html>
